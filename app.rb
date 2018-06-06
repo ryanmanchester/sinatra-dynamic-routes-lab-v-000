@@ -32,19 +32,19 @@ class App < Sinatra::Base
     @op = params[:operation]
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
-    binding.pry
+    #binding.pry
     case @op
     when "add"
       @sum = @num1 + @num2
       @sum.to_s
     when "subtract"
-      @diff = @num1 - @num2 
+      @diff = @num1 - @num2
       @diff.to_s
     when "multiply"
-      @product = @num1 * @num2 
+      @product = @num1 * @num2
       @product.to_s
     when "divide"
-      @quo = @num1 / @num2 
+      @quo = @num1 / @num2
       @quo.to_s
     end
   end
