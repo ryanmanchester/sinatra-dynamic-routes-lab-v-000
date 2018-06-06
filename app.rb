@@ -38,6 +38,7 @@ class App < Sinatra::Base
       @sum = @num1 + @num2
       @sum.to_s
     when "subtract"
+    end
   end
 
 end
