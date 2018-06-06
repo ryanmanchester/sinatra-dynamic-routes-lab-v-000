@@ -38,6 +38,14 @@ class App < Sinatra::Base
       @sum = @num1 + @num2
       @sum.to_s
     when "subtract"
+      @diff = @num1 - @num2 
+      @diff.to_s
+    when "multiply"
+      @product = @num1 * @num2 
+      @product.to_s
+    when "divide"
+      @quo = @num1 / @num2 
+      @quo.to_s
     end
   end
 
